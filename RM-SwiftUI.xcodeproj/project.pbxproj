@@ -16,6 +16,12 @@
 		BAD894A62BE560500002C2B7 /* RM_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD894A52BE560500002C2B7 /* RM_SwiftUITests.swift */; };
 		BAD894B02BE560500002C2B7 /* RM_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD894AF2BE560500002C2B7 /* RM_SwiftUIUITests.swift */; };
 		BAD894B22BE560500002C2B7 /* RM_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD894B12BE560500002C2B7 /* RM_SwiftUIUITestsLaunchTests.swift */; };
+		BAD894C22BE562550002C2B7 /* ListCharacterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD894C12BE562550002C2B7 /* ListCharacterRouter.swift */; };
+		BAD894C82BE562B40002C2B7 /* ListCharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD894C72BE562B40002C2B7 /* ListCharacterPresenter.swift */; };
+		BAD894CA2BE562BD0002C2B7 /* ListCharacterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD894C92BE562BC0002C2B7 /* ListCharacterEntity.swift */; };
+		BAD894CC2BE562CA0002C2B7 /* ListCharacterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD894CB2BE562CA0002C2B7 /* ListCharacterInteractor.swift */; };
+		BAD894CE2BE562D50002C2B7 /* ListCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD894CD2BE562D50002C2B7 /* ListCharacterView.swift */; };
+		BAD894D02BE563910002C2B7 /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD894CF2BE563910002C2B7 /* CharacterResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		BAD894AB2BE560500002C2B7 /* RM-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RM-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD894AF2BE560500002C2B7 /* RM_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RM_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		BAD894B12BE560500002C2B7 /* RM_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RM_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BAD894C12BE562550002C2B7 /* ListCharacterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharacterRouter.swift; sourceTree = "<group>"; };
+		BAD894C72BE562B40002C2B7 /* ListCharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharacterPresenter.swift; sourceTree = "<group>"; };
+		BAD894C92BE562BC0002C2B7 /* ListCharacterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharacterEntity.swift; sourceTree = "<group>"; };
+		BAD894CB2BE562CA0002C2B7 /* ListCharacterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharacterInteractor.swift; sourceTree = "<group>"; };
+		BAD894CD2BE562D50002C2B7 /* ListCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharacterView.swift; sourceTree = "<group>"; };
+		BAD894CF2BE563910002C2B7 /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +110,7 @@
 		BAD8948E2BE5604C0002C2B7 /* RM-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				BAD894BE2BE562190002C2B7 /* Modulos */,
 				BAD8948F2BE5604C0002C2B7 /* RM_SwiftUIApp.swift */,
 				BAD894912BE5604C0002C2B7 /* ContentView.swift */,
 				BAD894932BE560500002C2B7 /* Assets.xcassets */,
@@ -131,6 +144,67 @@
 				BAD894B12BE560500002C2B7 /* RM_SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = "RM-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		BAD894BE2BE562190002C2B7 /* Modulos */ = {
+			isa = PBXGroup;
+			children = (
+				BAD894BF2BE562240002C2B7 /* ListCharacter */,
+			);
+			path = Modulos;
+			sourceTree = "<group>";
+		};
+		BAD894BF2BE562240002C2B7 /* ListCharacter */ = {
+			isa = PBXGroup;
+			children = (
+				BAD894C62BE5629B0002C2B7 /* Presenter */,
+				BAD894C52BE562860002C2B7 /* Entity */,
+				BAD894C42BE5627E0002C2B7 /* Interactor */,
+				BAD894C32BE562750002C2B7 /* View */,
+				BAD894C02BE5624B0002C2B7 /* Router */,
+			);
+			path = ListCharacter;
+			sourceTree = "<group>";
+		};
+		BAD894C02BE5624B0002C2B7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BAD894C12BE562550002C2B7 /* ListCharacterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BAD894C32BE562750002C2B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAD894CD2BE562D50002C2B7 /* ListCharacterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BAD894C42BE5627E0002C2B7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BAD894CB2BE562CA0002C2B7 /* ListCharacterInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BAD894C52BE562860002C2B7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				BAD894C92BE562BC0002C2B7 /* ListCharacterEntity.swift */,
+				BAD894CF2BE563910002C2B7 /* CharacterResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		BAD894C62BE5629B0002C2B7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BAD894C72BE562B40002C2B7 /* ListCharacterPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +339,14 @@
 			files = (
 				BAD8949C2BE560500002C2B7 /* RM_SwiftUI.xcdatamodeld in Sources */,
 				BAD894992BE560500002C2B7 /* Persistence.swift in Sources */,
+				BAD894D02BE563910002C2B7 /* CharacterResponse.swift in Sources */,
+				BAD894C82BE562B40002C2B7 /* ListCharacterPresenter.swift in Sources */,
 				BAD894922BE5604C0002C2B7 /* ContentView.swift in Sources */,
+				BAD894CC2BE562CA0002C2B7 /* ListCharacterInteractor.swift in Sources */,
 				BAD894902BE5604C0002C2B7 /* RM_SwiftUIApp.swift in Sources */,
+				BAD894CE2BE562D50002C2B7 /* ListCharacterView.swift in Sources */,
+				BAD894CA2BE562BD0002C2B7 /* ListCharacterEntity.swift in Sources */,
+				BAD894C22BE562550002C2B7 /* ListCharacterRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

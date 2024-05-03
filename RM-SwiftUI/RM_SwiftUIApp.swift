@@ -6,15 +6,17 @@
 //
 
 import SwiftUI
-
 @main
 struct RM_SwiftUIApp: App {
     let persistenceController = PersistenceController.shared
+    let listCharacterInteractor = ListCharacterInteractor()
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            // Crea el presenter y pasa el interactor
+            let presenter = ListCharacterPresenter(listCharacterInteractor: listCharacterInteractor)
+            ListCharacterView(presenter: presenter)
         }
     }
 }
+
